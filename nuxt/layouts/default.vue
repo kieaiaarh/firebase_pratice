@@ -1,5 +1,5 @@
-<template>
-  <div>test</div>
+<template lang="pug">
+  div using_pug
 </template>
 
 <script>
@@ -10,3 +10,5 @@ export default {
   }
 }
 </script>
+<style>
+</style>

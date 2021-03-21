@@ -4,7 +4,8 @@ RUN mkdir -p /nuxt
 COPY . /nuxt
 WORKDIR /nuxt
 
-RUN chmod u+x /usr/local/bin/yarn && \ 
+RUN chmod u+x /usr/local/bin/yarn && \
+    yarn cache clean && \
     yarn global add nuxt && \
     yarn global add vue-cli create-nuxt-app
 
