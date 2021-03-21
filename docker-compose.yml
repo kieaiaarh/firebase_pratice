@@ -5,7 +5,11 @@ services:
     command: yarn run dev
     working_dir: /nuxt
     volumes:
-      - ./nuxt:/nuxt
+      - ./nuxt:/nuxt:delegated
+    tty: true
+    stdin_open: true
+    environment:
+      - CHOKIDAR_USEPOLLING=true
     ports:
       - "3000:3000"
       - "9229:9229"
