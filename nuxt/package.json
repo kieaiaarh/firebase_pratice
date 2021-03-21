@@ -6,7 +6,8 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "clear-hard-source-cache": "rm -rf node_modules/.cache/hard-source/"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.1",
@@ -16,9 +17,10 @@
   "devDependencies": {
     "@nuxtjs/vuetify": "^1.11.3",
     "fibers": "^5.0.0",
-    "pug": "2.0.3",
+    "node-sass": "^5.0.0",
+    "pug": "^3.0.2",
     "pug-plain-loader": "^1.1.0",
     "sass": "^1.32.8",
-    "sass-loader": "10"
+    "sass-loader": "^11.0.1"
   }
 }
